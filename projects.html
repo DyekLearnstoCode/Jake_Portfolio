@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Jake's Portfolio </title>
+    <meta name="description"
+        content="Jake Ryan Jader, an IT student and web developer. Explore my projects, skills, and professional portfolio.">
+    <meta name="keywords" content="">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Slab:wght@700&display=swap"
+        rel="stylesheet">
+    <!--Animation-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="icon" type="image/png" href="./img assets/favicon.png">
+    <style>
+        .hover-scale {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .hover-scale:hover {
+            transform: translateY(-5px) scale(1.03);
+            box-shadow: 0 0 20px #d39e00, 0 0 30px rgba(211, 158, 0, 0.6);
+        }
+
+        @media (max-width: 767px) {
+            .text-md-start {
+                text-align: center !important;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--nav buttons-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" style="border-bottom: 2px solid black;">
+        <div class="container">
+            <!-- Left: Name with Logo -->
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="./index.html">
+                <img src="./img assets/logo-white.png" alt="Logo" width="auto" height="35" class="logo-img me-2" />
+            </a>
+
+            <!-- Toggler Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible Content -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Center: Nav Links -->
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link " href="./index.html"><i class="bi bi-house fs-5"></i>
+                            <span>Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html"><i class="bi bi-person fs-5"></i>
+                            <span>About</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./education.html"><i class="bi bi-mortarboard fs-5"></i>
+                            <span>Education</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./projects.html"><i class="bi bi-briefcase fs-5"></i>
+                            <span>Projects</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html"><i class="bi bi-envelope fs-5"></i>
+                            <span>Contact</span></a>
+                    </li>
+                </ul>
+
+
+
+                <!-- Right: Social Icons -->
+                <div class="d-flex justify-content-center socmed-links">
+                    <a href="https://github.com/DyekLearnstoCode" target="_blank" class="text-white mx-2">
+                        <i class="bi bi-github fs-5"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/jake-ryan-jader-26189233a" target="_blank" class="text-white mx-2">
+                        <i class="bi bi-linkedin fs-5"></i>
+                    </a>
+                    <a href="https://facebook.com/itsmedyakee" target="_blank" class="text-white mx-2">
+                        <i class="bi bi-facebook fs-5"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!--projects-->
+        <section id="projects" class="py-5 bg-dark" data-aos="fade-in">
+            <div class="container">
+                <!-- Heading -->
+                <div class="text-center mb-5">
+                    <h1 class="fw-bold text-warning">Projects</h1>
+                    <p class="lead text-light">A showcase of my featured works with live demos.</p>
+                </div>
+
+                <!-- Project Row 1: Image Left, Content Right -->
+                <div class="row align-items-center g-4 mb-5" data-aos="fade-up">
+                    <div class="col-md-6 d-flex">
+                        <img src="./img assets/2morrow.PNG" alt="2Morrow Electric" class="full-img">
+                    </div>
+
+                    <div
+                        class="col-md-6 d-flex flex-column justify-content-center text-light text-md-start text-center">
+                        <div class="card bg-dark h-100 shadow-sm border-warning border-2 p-4 hover-scale">
+                            <h3 class="fw-bold mb-2">2Morrow Electric - <span class="text-warning">Showcase
+                                    Website</span> </h3>
+                            <p class="mb-1"><strong>Company:</strong> 2Morrow Electric LLC</p>
+                            <p class="mb-1"><strong>Builder:</strong> GO HIGH LEVEL</p>
+                            <p class="mb-1"><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+                            <p class="text-justify mt-2">Developed a business website that highlights the company's
+                                electrical services, service areas, and customer trust through clean UI and
+                                integrated
+                                inquiry forms.</p>
+                            <button type="button" class="btn btn-warning mt-auto"
+                                onclick="confirmRedirect('https://2morrowelectricllc.com/home-of-professional-electrical-services-in-tennessee')">
+                                View Website
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Row 2: Content Left, Image Right -->
+                <div class="row align-items-center g-4 mb-5" data-aos="fade-up">
+                    <div
+                        class="col-md-6 d-flex flex-column justify-content-center text-light text-md-start text-center order-md-1 order-2">
+                        <div class="card bg-dark h-100 shadow-sm border-warning border-2 p-4 hover-scale">
+                            <h3 class="fw-bold mb-2">Z8 Glass Service - <span class="text-warning">Full Website
+                                    Design
+                                    Build</span> </h3>
+                            <p class="mb-1"><strong>Company:</strong> Z8 Glass Service</p>
+                            <p class="mb-1"><strong>Builder:</strong> GO HIGH LEVEL</p>
+                            <p class="mb-1"><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+                            <p class="text-justify mt-2">Created a modern, mobile-friendly site that presents the
+                                company's
+                                glass repair and installation services, emphasizes reliability through
+                                before-and-after
+                                visuals, and integrates inquiry links for seamless customer engagement.</p>
+
+                            <button type="button" class="btn btn-warning mt-auto"
+                                onclick="confirmRedirect('https://app.sparkgrowth.ai/v2/preview/jAhO86lHfkTQJs8OYjVI')">
+                                View Website
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-md-2 order-1 d-flex">
+                        <img src="./img assets/z8.PNG" alt="Z8 Glass Service" class="full-img">
+                    </div>
+                </div>
+
+
+                <!-- Project Row 3: Image Left, Content Right -->
+                <div class="row align-items-center g-4 mb-5" data-aos="fade-up">
+                    <div class="col-md-6 d-flex">
+                        <img src="./img assets/adams.PNG" alt="Adams Lawn Service" class="full-img">
+                    </div>
+                    <div
+                        class="col-md-6 d-flex flex-column justify-content-center text-light text-md-start text-center">
+                        <div class="card bg-dark h-100 shadow-sm border-warning border-2 p-4 hover-scale">
+                            <h3 class="fw-bold mb-2">Adams Lawn Service - <span class="text-warning">Local
+                                    Landscaping
+                                    Web Platform</span> </h3>
+                            <p class="mb-1"><strong>Company:</strong> Adams Lawn Service</p>
+                            <p class="mb-1"><strong>Builder:</strong> GO HIGH LEVEL</p>
+                            <p class="mb-1"><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+                            <p class="text-justify mt-2">Designed and built a service-focused website that showcases
+                                lawn
+                                care solutions, seasonal maintenance packages, and customer testimonials, while
+                                enabling
+                                quick service requests through a user-friendly contact form.</p>
+
+                            <button type=" button" class="btn btn-warning mt-auto"
+                                onclick="confirmRedirect('https://app.sparkgrowth.ai/v2/preview/SPAUWWPg3kvUFRdw488l')">
+                                View Website
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Row 4: Content Left, Image Right -->
+                <div class="row align-items-center g-4 mb-5" data-aos="fade-up">
+                    <div
+                        class="col-md-6 d-flex flex-column justify-content-center text-light text-md-start text-center order-md-1 order-2">
+                        <div class="card bg-dark h-100 shadow-sm border-warning border-2 p-4 hover-scale">
+                            <h3 class="fw-bold mb-2">God Made Apparel - <span class="text-warning">Full Website
+                                    Design Build</span> </h3>
+                            <p class="mb-1"><strong>Shop:</strong> God Made Apparel</p>
+                            <p class="mb-1"><strong>Builder:</strong> GO HIGH LEVEL</p>
+                            <p class="mb-1"><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+                            <p class="text-justify mt-2">
+                                Created a modern, mobile-friendly website that highlights the shop's T-shirt collection
+                                with a clean and responsive design. The site ensures smooth navigation, fast loading,
+                                and an engaging browsing experience across desktop and mobile devices.
+                            </p>
+                            <button type="button" class="btn btn-warning mt-auto"
+                                onclick="confirmRedirect('https://godmadeapparel.org/home')">
+                                View Website
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-md-2 order-1 d-flex">
+                        <img src="./img assets/godmade.png" alt="God Made Apparel" class="full-img">
+                    </div>
+                </div>
+
+                <!-- Project Row 5: Image Left, Content Right -->
+                <div class="row align-items-center g-4 mb-5" data-aos="fade-up">
+                    <div class="col-md-6 d-flex">
+                        <img src="./img assets/n2.png" alt="Adams Lawn Service" class="full-img">
+                    </div>
+                    <div
+                        class="col-md-6 d-flex flex-column justify-content-center text-light text-md-start text-center">
+                        <div class="card bg-dark h-100 shadow-sm border-warning border-2 p-4 hover-scale">
+                            <h3 class="fw-bold mb-2">N2Stone Stone Restoration- <span class="text-warning">Full Website
+                                    Design</span> </h3>
+                            <p class="mb-1"><strong>Company:</strong> N2Stone TX</p>
+                            <p class="mb-1"><strong>Builder:</strong> GO HIGH LEVEL</p>
+                            <p class="mb-1"><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+                            <p class="text-justify mt-2">
+                                Designed and developed a professional website for N2Stone TX that highlights their
+                                stonework services, custom design projects, and client testimonials, while providing a
+                                seamless way for visitors to request quotes and explore the company's reliability.
+                            </p>
+
+
+                            <button type=" button" class="btn btn-warning mt-auto"
+                                onclick="confirmRedirect('https://app.sparkgrowth.ai/v2/preview/7OQFz9bMLU7LXOya1fM4')">
+                                View Website
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Row 6: Image Left, Content Right -->
+                <div class="row align-items-center g-4 mb-5" data-aos="fade-up">
+                    <div
+                        class="col-md-6 d-flex flex-column justify-content-center text-light text-md-start text-center order-md-1 order-2">
+                        <div class="card bg-dark h-100 shadow-sm border-warning border-2 p-4 hover-scale">
+                            <h3 class="fw-bold mb-2">Efficient Tradies - <span class="text-warning">Full Website Design
+                                </span> </h3>
+                            <p class="mb-1"><strong>Company:</strong> Efficient Tradies</p>
+                            <p class="mb-1"><strong>Builder:</strong> GO HIGH LEVEL</p>
+                            <p class="mb-1"><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+                            <p class="text-justify mt-2">
+                                Crafted a modern homepage sample for Efficient Tradies, spotlighting Katie Marshall's
+                                practical bookkeeping solutions and Profit First coaching for tradies. The design
+                                showcases her expertise in streamlining finances, highlights client success stories, and
+                                features an inviting call-to-action for tradies to book a discovery session.
+                            </p>
+
+
+
+                            <button type="button" class="btn btn-warning mt-auto"
+                                onclick="confirmRedirect('https://app.frameworkscreatefreedom.com/v2/preview/fXzjKxMwOQZrvZby235i')">
+                                View Website
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-md-2 order-1 d-flex">
+                        <img src="./img assets/katie.png" alt="Z8 Glass Service" class="full-img">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--Contact-->
+        <section id="contact" class="py-5 bg-light" data-aos="fade-up">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <!-- Left Column: Text -->
+                    <div class="col-md-6 mb-4 mb-md-0 text-center text-md-start">
+                        <h3 class="fw-bold">Get in Touch</h3>
+                        <p class="text-muted lead">
+                            Have a project in mind or want to collaborate? Feel free to reach out using the form or
+                            the
+                            contact
+                            details below,
+                            and I'll get back to you as soon as possible.
+                        </p>
+                        <p><i class="bi bi-envelope-fill me-2"></i> <a href="mailto:jakeryanjader@gmail.com"
+                                class="text-dark">jakeryanjader@gmail.com</a></p>
+                        <p><i class="bi bi-telephone-fill me-2"></i> +63 993 983 9959</p>
+                    </div>
+
+                    <!-- Right Column: Contact Form -->
+                    <div class="col-md-6">
+                        <form class="card p-4">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name"
+                                    required>
+                            </div>
+
+                            <div class=" mb-3">
+                                <label for="email" class="form-label">Email Address or Phone</label>
+                                <input type="text" class="form-control" id="email"
+                                    placeholder="Enter your email or phone" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Your Message</label>
+                                <textarea class="form-control" id="message" rows="4"
+                                    placeholder="Write your message here" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-warning px-4">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-light pt-5 pb-3 mt-5">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <!-- Brand/About -->
+                <div class="col-12 col-md-3 mb-4">
+                    <img src="./img assets/logo-white.png" alt="Logo" class="mb-3"
+                        style="max-height:100px; max-width: 120px;" />
+                    <p class="small text-muted">
+                        Hi, I'm Jake — an IT student and future developer. I love turning ideas into digital
+                        solutions.
+                        This portfolio reflects my journey of learning, building, and innovating.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-6 col-md-3 mb-4">
+                    <h5 class="fw-bold">Quick Links</h5>
+                    <ul class="nav-custom list-unstyled">
+
+                        <li>
+                            <a href="./index.html" class="text-decoration-none  d-block py-1"><i
+                                    class="bi bi-house fs-6"></i>
+                                <span>Home</span></a>
+                        </li>
+
+                        <li>
+                            <a href="./about.html" class="text-decoration-none d-block py-1"><i
+                                    class="bi bi-person fs-6"></i>
+                                <span>About</span></a>
+                        </li>
+
+                        <li>
+                            <a href="./education.html" class="text-decoration-none d-block py-1"><i
+                                    class="bi bi-mortarboard fs-6"></i>
+                                <span>Education</span></a>
+                        </li>
+
+                        <li>
+                            <a href="./projects.html" class="text-decoration-none d-block py-1 active"><i
+                                    class="bi bi-code-slash fs-6"></i>
+                                <span>Projects</span></a>
+                        </li>
+
+                        <li>
+                            <a href="./contact.html" class="text-decoration-none  d-block py-1"><i
+                                    class="bi bi-envelope fs-6"></i>
+                                <span>Contact</span></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-6 col-md-3 mb-4">
+                    <h5 class="fw-bold">Contact</h5>
+                    <p class="small mb-1">
+                        <i class="bi bi-envelope-fill me-2"></i>
+                        <a href="mailto:jakeryanjader@gmail.com" class="contact-link">
+                            jakeryanjader@gmail.com
+                        </a>
+                    </p>
+                    <p class="small mb-1">
+                        <i class="bi bi-telephone-fill me-2"></i>
+                        <a href="tel:+639939839959" class="contact-link">
+                            +63 993 983 9959
+                        </a>
+                    </p>
+                    <p class="small mb-1">
+                        <i class="bi bi-geo-alt-fill me-2"></i>
+                        <a href="https://maps.app.goo.gl/N8gsVznA6yicPxNcA" class="contact-link">
+                            Brgy. Balubal Purok 2 Sariaya, Quezon
+                        </a>
+                    </p>
+                </div>
+
+                <!-- Social Media -->
+                <div class="col-12 col-md-3 mb-4">
+                    <h5 class="fw-bold">Follow Me</h5>
+                    <div class="d-flex justify-content-center justify-content-md-start gap-3 socmed-links">
+                        <a href="https://github.com/DyekLearnstoCode" target="_blank"><i
+                                class="bi bi-github fs-5"></i></a>
+                        <a href="https://linkedin.com/in/jake-ryan-jader-26189233a" target="_blank"><i
+                                class="bi bi-linkedin fs-5"></i></a>
+                        <a href="https://facebook.com/itsmedyakee" target="_blank"><i
+                                class="bi bi-facebook fs-5"></i></a>
+                    </div>
+                </div>
+
+
+                <!-- Bottom Row -->
+                <div class="text-center border-top border-secondary pt-3 mt-3">
+                    <p class="small mb-0">&copy; 2025 Jake Ryan Jader. All Rights Reserved.</p>
+                </div>
+            </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn btn-dark">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!--JS bootstrap-->
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+    <!--animation-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</body>
+
+</html>

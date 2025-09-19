@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Education | Jake's Portfolio </title>
+  <meta name="description"
+    content="Jake Ryan Jader, an IT student and web developer. Explore my projects, skills, and professional portfolio.">
+  <meta name="keywords" content="">
+
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Slab:wght@700&display=swap"
+    rel="stylesheet">
+  <!--Animation-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="icon" type="image/png" href="./img assets/favicon.png">
+
+  <style>
+    body {
+      background-color: #212529;
+
+      h1 {
+        color: #d39e00 !important;
+      }
+
+      .card {
+        background-color: white;
+        color: black;
+
+        h4 {
+          color: #d39e00;
+        }
+      }
+
+      .left-border {
+        border-left: 5px solid #d39e00 !important;
+        border-right: 5px solid #d39e00 !important;
+        border-radius: 15px;
+
+      }
+
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <!--nav buttons-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" style="border-bottom: 2px solid black;">
+    <div class="container">
+      <!-- Left: Name with Logo -->
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="./index.html">
+        <img src="./img assets/logo-white.png" alt="Logo" width="auto" height="35" class="logo-img me-2" />
+      </a>
+
+      <!-- Toggler Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapsible Content -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- Center: Nav Links -->
+        <ul class="navbar-nav mx-auto text-center">
+          <li class="nav-item">
+            <a class="nav-link " href="./index.html"><i class="bi bi-house fs-5"></i> <span>Home</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html"><i class="bi bi-person fs-5"></i> <span>About</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./education.html"><i class="bi bi-mortarboard fs-5"></i>
+              <span>Education</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./projects.html"><i class="bi bi-briefcase fs-5"></i> <span>Projects</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html"><i class="bi bi-envelope fs-5"></i> <span>Contact</span></a>
+          </li>
+        </ul>
+
+
+
+        <!-- Right: Social Icons -->
+        <div class="d-flex justify-content-center socmed-links">
+          <a href="https://github.com/DyekLearnstoCode" target="_blank" class="text-white mx-2">
+            <i class="bi bi-github fs-5"></i>
+          </a>
+          <a href="https://linkedin.com/in/jake-ryan-jader-26189233a" target="_blank" class="text-white mx-2">
+            <i class="bi bi-linkedin fs-5"></i>
+          </a>
+          <a href="https://facebook.com/itsmedyakee" target="_blank" class="text-white mx-2">
+            <i class="bi bi-facebook fs-5"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Education Section -->
+    <section class="py-5 text-center" data-aos="fade-in">
+      <div class="container">
+        <h1 class="fw-bold ">My Education</h1>
+        <p class="divider mb-3"></p>
+        <p class="lead text-center mb-5 text-muted">
+          A timeline of my academic journey that shaped my passion for IT and development.
+        </p>
+
+        <div class="timeline ">
+          <!-- College -->
+          <div class="card p-4 h-100 mb-3" data-aos="fade-up">
+            <div class="timeline mt-3">
+              <div class="timeline-item flex-wrap">
+                <img src="./img assets/cstc.png" alt="CSTC Logo" class="img-fluid" style="max-width: 300px;">
+                <h4>Bachelor of Science in Information Technology</h4>
+                <p class="fw-bold mb-0">CSTC Inc. | 2022 - Present</p>
+                <p class="text-muted">Poblacion 3, Gen. Luna St. Sariaya, Quezon</p>
+                <p>
+                  Currently pursuing my IT degree, focusing on web development, networking,
+                  and capstone projects involving IoT and smart systems.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!--SHS-->
+          <div class="card p-4 h-100 mb-3" data-aos="fade-up">
+            <div class="timeline mt-3">
+              <div class="timeline-item">
+                <img src="./img assets/pili.png" alt="Pili Logo" class="img-fluid mb-3" style="max-width: 300px;">
+                <h4>Senior High School - Information Communication and Technology (ICT) Strand</h4>
+                <span class="fw-bold mb-0">Pili National HS | 2020 - 2022</span>
+                <p class="text-muted ">Brgy. Pili Sariaya, Quezon</p>
+                <p>
+                  Developed strong foundations in science, mathematics, and problem-solving, preparing me for my IT
+                  career path.
+                </p>
+
+                <p class="divider" style="width: 100%;"></p>
+                <div class="row mt-3 ">
+                  <h4 class="mb-3">Achievements & Awards</h4>
+                  <div class="col-md-4 mb-3">
+                    <div class="card h-100 shadow-sm p-3 ">
+                      <div class="card-body text-center left-border">
+
+                        <h6 class="fw-bold">With Honors</h6>
+                        <p class="text-muted mb-0">11th grade (2021 - 2022)</p>
+                        <button type="button" class="btn btn-warning btn-sm mt-2" data-bs-toggle="modal"
+                          data-bs-target="#grade11Modal">
+                          View Certificate
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 mb-3">
+                    <div class="card h-100 shadow-sm p-3 ">
+                      <div class="card-body text-center left-border">
+
+                        <h6 class="fw-bold">With Honors</h6>
+                        <p class="text-muted mb-0">12th grade (2022 - 2023)</p>
+                        <button type="button" class="btn btn-warning btn-sm mt-2" data-bs-toggle="modal"
+                          data-bs-target="#grade12honor">
+                          View Certificate
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 mb-3">
+                    <div class="card h-100 shadow-sm p-3 ">
+                      <div class="card-body text-center left-border">
+                        <h6 class="fw-bold">Filipino Quiz Bee Champion</h6>
+                        <p class="text-muted mb-0">12th grade (2022 - 2023)</p>
+                        <button type="button" class="btn btn-warning btn-sm mt-2" data-bs-toggle="modal"
+                          data-bs-target="#quizBee">
+                          View Certificate
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--JHS-->
+          <div class="card p-4 h-100 mb-3" data-aos="fade-up">
+            <div class="timeline mt-3">
+              <div class="timeline-item">
+                <img src="./img assets/pili.png" alt="Pili Logo" class="img-fluid mb-3" style="max-width: 300px;">
+                <h4>Junior High School</h4>
+                <span class="fw-bold mb-0">Pili National HS | 2020 - 2022</span>
+                <p class="text-muted ">Brgy. Pili Sariaya, Quezon</p>
+                <p>
+                  Actively participated in academic and extracurricular activities that built my discipline, teamwork,
+                  and
+                  creativity.
+                </p>
+                <p class="divider" style="width: 100%;"></p>
+
+                <!-- Awards Row -->
+
+                <div class="row mt-3">
+                  <h4 class="mb-3">Achievements & Awards</h4>
+                  <div class="col-md-4 mb-3">
+                    <div class="card h-100 shadow-sm p-3 ">
+                      <div class="card-body text-center left-border">
+                        <h6 class="fw-bold">Consistent With Honors</h6>
+                        <p class="text-muted mb-0">7th grade (2016 - 2017)</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <div class="card h-100 shadow-sm p-3 ">
+                      <div class="card-body text-center left-border">
+                        <h6 class="fw-bold">Consistent With Honors</h6>
+                        <p class="text-muted mb-0">8th grade (2017 - 2018)</p>
+                        <button type="button" class="btn btn-warning btn-sm mt-2" data-bs-toggle="modal"
+                          data-bs-target="#grade8">
+                          View Certificate
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <div class="card h-100 shadow-sm p-3 ">
+                      <div class="card-body text-center left-border">
+                        <h6 class="fw-bold">Consistent With Honors</h6>
+                        <p class="text-muted mb-0">8th grade (2017 - 2018)</p>
+                        <button type="button" class="btn btn-warning btn-sm mt-2" data-bs-toggle="modal"
+                          data-bs-target="#grade8-sec">
+                          View Certificate
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                </div>
+              </div>
+            </div>
+
+            <!--ELEM-->
+            <div class="card p-4 h-100 mb-3" data-aos="fade-up">
+              <div class="timeline mt-3">
+                <div class="timeline-item">
+                  <img src="./img assets/mlq.png" alt="MLQ Logo" class="img-fluid mb-3" style="max-width: 300px; ">
+                  <h4>Elementary Education</h4>
+                  <span class=" fw-bold mb-0">Manuel Luis Quezon ES | 2010 2016</span>
+                  <p class="text-muted">Gomez St. Sariaya, Quezon</p>
+                  <p>
+                    Established my curiosity for things that seems interesting and exciting for me.
+                  </p>
+                </div>
+              </div>
+            </div>
+    </section>
+
+    <!--Contact-->
+    <section id="contact" class="py-5 bg-light" data-aos="fade-up">
+      <div class="container">
+        <div class="row align-items-center">
+
+          <!-- Left Column: Text -->
+          <div class="col-md-6 mb-4 mb-md-0 text-center text-md-start">
+            <h2 class="fw-bold text-dark">Get in Touch</h2>
+            <p class="text-muted lead">
+              Have a project in mind or want to collaborate? Feel free to reach out using the form or the contact
+              details below,
+              and I'll get back to you as soon as possible.
+            </p>
+            <p><i class="bi bi-envelope-fill me-2"></i> <a href="mailto:jakeryanjader@gmail.com"
+                class="text-dark">jakeryanjader@gmail.com</a></p>
+            <p><i class="bi bi-telephone-fill me-2"></i> +63 993 983 9959</p>
+          </div>
+
+          <!-- Right Column: Contact Form -->
+          <div class="col-md-6">
+            <form class="card p-4">
+              <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+              </div>
+
+              <div class=" mb-3">
+                <label for="email" class="form-label">Email Address or Phone</label>
+                <input type="text" class="form-control" id="email" placeholder="Enter your email or phone" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Write your message here"
+                  required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-warning px-4">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <section>
+    <!-- Grade 11 cert -->
+    <div class="modal fade" id="grade11Modal" data-bs-backdrop="true" data-bs-keyboard="true">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content bg-dark text-white">
+          <div class="modal-header">
+            <h5 class="modal-title" id="grade11ModalLabel">Grade 11 Recognition</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="./img assets/g11.png" alt="Grade 11 Recognition" class="img-fluid rounded">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Grade 12 honor cert-->
+    <div class="modal fade" id="grade12honor" data-bs-backdrop="true" data-bs-keyboard="true">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content bg-dark text-white">
+          <div class="modal-header">
+            <h5 class="modal-title" id="grade11ModalLabel">Grade 12 Certificate</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="./img assets/22.png" alt="Grade 12 Honor Certificate" class="img-fluid rounded">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Quiz Bee-->
+    <div class="modal fade" id="quizBee" data-bs-backdrop="true" data-bs-keyboard="true">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content bg-dark text-white">
+          <div class="modal-header">
+            <h5 class="modal-title" id="grade11ModalLabel">Grade 12 Quiz Bee Certificate</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="./img assets/21.png" alt="Grade 12 Quiz Bee Certificate" class="img-fluid rounded">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--8th Grade-->
+    <div class="modal fade" id="grade8" data-bs-backdrop="true" data-bs-keyboard="true">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content bg-dark text-white">
+          <div class="modal-header">
+            <h5 class="modal-title" id="grade11ModalLabel">Grade 12 Quiz Bee Certificate</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="./img assets/20.png" alt="Grade 8 Certificate" class="img-fluid rounded">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--8th Grade-->
+    <div class="modal fade" id="grade8-sec" data-bs-backdrop="true" data-bs-keyboard="true">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content bg-dark text-white">
+          <div class="modal-header">
+            <h5 class="modal-title" id="grade11ModalLabel">Grade 12 Quiz Bee Certificate</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="./img assets/18.png" alt="Grade 8 Certificate" class="img-fluid rounded">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-dark text-light  pb-3 mt-5">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <!-- Brand/About -->
+        <div class="col-12 col-md-3 mb-4">
+          <img src="./img assets/logo-white.png" alt="Logo" class="mb-3" style="max-height:100px; max-width: 120px;" />
+          <p class="small text-muted">
+            Hi, I'm Jake — an IT student and future developer. I love turning ideas into digital
+            solutions.
+            This portfolio reflects my journey of learning, building, and innovating.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-6 col-md-3 mb-4">
+          <h5 class="fw-bold">Quick Links</h5>
+          <ul class="nav-custom list-unstyled">
+
+            <li>
+              <a href="./index.html" class="text-decoration-none  d-block py-1"><i class="bi bi-house fs-6"></i>
+                <span>Home</span></a>
+            </li>
+
+            <li>
+              <a href="./about.html" class="text-decoration-none d-block py-1"><i class="bi bi-person fs-6"></i>
+                <span>About</span></a>
+            </li>
+
+            <li>
+              <a href="./education.html" class="text-decoration-none d-block py-1 active"><i
+                  class="bi bi-mortarboard fs-6"></i>
+                <span>Education</span></a>
+            </li>
+
+            <li>
+              <a href="./projects.html" class="text-decoration-none d-block py-1"><i class="bi bi-code-slash fs-6"></i>
+                <span>Projects</span></a>
+            </li>
+
+            <li>
+              <a href="./contact.html" class="text-decoration-none  d-block py-1"><i class="bi bi-envelope fs-6"></i>
+                <span>Contact</span></a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-6 col-md-3 mb-4">
+          <h5 class="fw-bold">Contact</h5>
+          <p class="small mb-1">
+            <i class="bi bi-envelope-fill me-2"></i>
+            <a href="mailto:jakeryanjader@gmail.com" class="contact-link">
+              jakeryanjader@gmail.com
+            </a>
+          </p>
+          <p class="small mb-1">
+            <i class="bi bi-telephone-fill me-2"></i>
+            <a href="tel:+639939839959" class="contact-link">
+              +63 993 983 9959
+            </a>
+          </p>
+          <p class="small mb-1">
+            <i class="bi bi-geo-alt-fill me-2"></i>
+            <a href="https://maps.app.goo.gl/N8gsVznA6yicPxNcA" class="contact-link">
+              Brgy. Balubal Purok 2 Sariaya, Quezon
+            </a>
+          </p>
+        </div>
+
+        <!-- Social Media -->
+        <div class="col-12 col-md-3 mb-4">
+          <h5 class="fw-bold">Follow Me</h5>
+          <div class="d-flex justify-content-center justify-content-md-start gap-3 socmed-links">
+            <a href="https://github.com/DyekLearnstoCode" target="_blank"><i class="bi bi-github fs-5"></i></a>
+            <a href="https://linkedin.com/in/jake-ryan-jader-26189233a" target="_blank"><i
+                class="bi bi-linkedin fs-5"></i></a>
+            <a href="https://facebook.com/itsmedyakee" target="_blank"><i class="bi bi-facebook fs-5"></i></a>
+          </div>
+        </div>
+
+        <!-- Bottom Row -->
+        <div class="text-center border-top border-secondary pt-3 mt-3">
+          <p class="small mb-0">&copy; 2025 Jake Ryan Jader. All Rights Reserved.</p>
+        </div>
+      </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="btn btn-dark">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!--JS bootstrap-->
+  <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./script.js"></script>
+  <!--animation-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</body>
+
+</html>

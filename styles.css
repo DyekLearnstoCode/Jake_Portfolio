@@ -1,0 +1,418 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #f8f9fa;
+  /* light theme */
+  color: #333;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.5s ease;
+}
+
+body.loaded {
+  opacity: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Roboto Slab", serif;
+}
+
+.active {
+  color: #d39e00 !important;
+}
+
+.card {
+  transition: ease-in-out 0.3s;
+}
+
+/* Normal state */
+.nav-link {
+  font-weight: 600;
+  font-size: 1rem;
+  transition: font-size 0.3s ease, padding 0.3s ease;
+}
+
+.nav-link span {
+  font-size: 0.8rem;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Shrink nav size on scroll (all devices) */
+.navbar.scrolled .nav-link {
+  font-size: 0.85rem;
+  padding: 0.2rem 0.5rem;
+}
+
+.nav-item {
+  padding-right: 20px;
+}
+
+/* Navbar transitions */
+.navbar {
+  transition: all 0.3s ease;
+}
+
+.socmed-links {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.navbar.scrolled {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+/* ✅ Only hide text labels on desktop */
+@media (min-width: 992px) {
+  .navbar.scrolled .nav-link span {
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+  }
+
+  /* Show text again on hover */
+  .navbar.scrolled .nav-link:hover span {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+}
+
+
+
+
+/* Hide logo */
+.logo-img {
+  height: 40px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Hover btn effect for all screen sizes */
+.btn-warning,
+.btn-dark {
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-warning:hover {
+  background-color: #d39e00;
+  color: #fff;
+}
+
+.btn-dark:hover {
+  background-color: #444;
+  color: #f8f9fa;
+}
+
+/* Subtle underline animation */
+.btn-warning::after,
+.btn-dark::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: currentColor;
+  /* matches text color */
+  transition: width 0.3s ease;
+}
+
+.btn-warning:hover::after,
+.btn-dark:hover::after {
+  width: 100%;
+}
+
+/* Mobile stacking only at <=768px */
+@media (max-width: 768px) {
+  .d-flex.flex-column.flex-sm-row.gap-3 {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+  }
+
+  .d-flex.flex-column.flex-sm-row.gap-3 a {
+    width: 80%;
+    text-align: center;
+  }
+}
+
+.hover-highlight {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-highlight:hover {
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* EDU CSS */
+.edu-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* HOBBY CSS */
+/* Card base */
+.h {
+  font-family: "Roboto Slab", serif;
+}
+
+.p {
+  font-family: "Lato", sans-serif;
+}
+
+.hobby-card {
+  background: #1c1c1c;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  min-height: 300px;
+  max-height: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .hobby-card {
+    min-height: 200px;
+    /* override min-height */
+    max-height: 200px;
+    /* override max-height */
+    height: auto;
+    /* let it adapt if content is smaller */
+  }
+}
+
+
+.hobby-card:hover {
+  box-shadow: 0 0 15px #d39e00, 0 0 10px #d39e00 inset;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Background reveal layer */
+.hobby-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 1;
+  pointer-events: none;
+  /* <-- important: don't block hover */
+}
+
+/* Reveal on hover */
+.hobby-card:hover::before {
+  opacity: 0.25;
+}
+
+/* Content above overlay */
+.hobby-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+/* Make sure icons can transform */
+.hobby-card i {
+  display: inline-block;
+  /* <-- lets transform animate reliably */
+  will-change: transform;
+}
+
+/* Wiggle animation */
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(8deg);
+  }
+
+  50% {
+    transform: rotate(-8deg);
+  }
+
+  80% {
+    transform: rotate(5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Trigger wiggle when the CARD is hovered (not the content) */
+.hobby-card:hover i {
+  animation: wiggle 0.6s ease-in-out infinite;
+}
+
+/* ✅ Background images per hobby card (order-based, not tied to col-md-3) */
+#hobbies .row>div:nth-child(1) .hobby-card::before {
+  background-image: url("https://youthtimemag.com/wp-content/uploads/2021/04/Are-Music-Streaming-Platforms-Good-For-Music.jpg");
+}
+
+#hobbies .row>div:nth-child(2) .hobby-card::before {
+  background-image: url("https://www.verdict.co.uk/wp-content/uploads/2022/09/shutterstock_1934243669.jpg");
+}
+
+#hobbies .row>div:nth-child(3) .hobby-card::before {
+  background-image: url("https://www.baptistpress.com/wp-content/uploads/2020/08/Watching-TV-iStock.jpg");
+}
+
+#hobbies .row>div:nth-child(4) .hobby-card::before {
+  background-image: url("https://tse1.explicit.bing.net/th/id/OIP.OPqF3eH0Tk7d9ou8IaLUUAHaE8?r=0&cb=thfc1&w=768&h=512&rs=1&pid=ImgDetMain&o=7&rm=3");
+}
+
+/*work exp css */
+
+.exp-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  max-height: 400px;
+}
+
+.exp-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #d39e00, 0 0 30px rgba(211, 158, 0, 0.6);
+}
+
+/* projects css */
+
+.project-card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 7px solid #d39e00;
+
+
+
+  .card-title {
+    text-align: center;
+  }
+
+  .card-text {
+    text-align: justify;
+  }
+}
+
+.full-img {
+  width: 100%;
+  height: 100%;
+  /* fills the whole column vertically */
+  object-fit: cover;
+  /* fills without distortion, but may crop */
+  transition: transform 0.3s ease;
+}
+
+.full-img:hover {
+  transform: scale(1.05);
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+
+/*footer */
+
+.nav-custom a {
+  color: #f8f9fa;
+  /* default color */
+  transition: color 0.3s ease;
+}
+
+.nav-custom a:hover {
+  color: #ffc107;
+  /* hover color */
+}
+
+/* Contact links */
+.contact-link {
+  color: #f8f9fa;
+  /* light default */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #ffc107;
+  /* highlight on hover */
+}
+
+/* Social icons */
+.socmed-links a {
+  color: #f8f9fa;
+  /* default */
+  font-size: 1.25rem;
+  /* same as fs-5 */
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.socmed-links a:hover {
+  color: #ffc107;
+  transform: translateY(-2px);
+  /* little lift */
+}
+
+
+/* Back to Top Button */
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  /* hidden by default */
+  z-index: 1000;
+  border-radius: 50%;
+  padding: 10px 14px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  border: 1px solid #fff;
+}
+
+/* Hover effect */
+#backToTop:hover {
+  transform: scale(1.1);
+}
+
+.divider {
+  background-color: #d39e00;
+  height: 2px;
+  width: 5%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  /* centers horizontally */
+}
+
+
+/*see cert css */
+.modal-content {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+.modal-body {
+  padding: 0;
+}
